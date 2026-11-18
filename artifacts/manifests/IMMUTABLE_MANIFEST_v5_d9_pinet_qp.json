@@ -1,0 +1,78 @@
+{
+  "created_at_utc": "2026-11-18T21:25:04.794520+00:00",
+  "entries": {
+    "immutable_eval/d9_gt_confirm.npz": {
+      "exec": false,
+      "sha256": "4700d9974f3a84cb138c32be152df930893ef423c8a8a67e97c1148c290d0db9",
+      "size": 14864166,
+      "type": "file"
+    },
+    "immutable_eval/d9_gt_holdout.npz": {
+      "exec": false,
+      "sha256": "59b0a79e014563dc4c4e6a275ca0fca6a297149bd5945119eeaa7c07d8e8082e",
+      "size": 14864166,
+      "type": "file"
+    },
+    "immutable_eval/d9_gt_search.npz": {
+      "exec": false,
+      "sha256": "a86947c6044c660d144324bbd233d68c3eacb58f4ae4a43f8362358bbc8a184b",
+      "size": 14864006,
+      "type": "file"
+    },
+    "immutable_eval/gate_rules_confirm.json": {
+      "exec": false,
+      "sha256": "07c95405047c60e8ac19a25458ddfcd12a0877b9f4f8a4d7f9110df49970bf37",
+      "size": 657,
+      "type": "file"
+    },
+    "immutable_eval/gate_rules_search.json": {
+      "exec": false,
+      "sha256": "68066be2c35c6f30cda6d6b42c8def0ef6412ec82aaa13c57e3446f46a71bdf8",
+      "size": 359,
+      "type": "file"
+    },
+    "immutable_eval/gt_confirm.json": {
+      "exec": false,
+      "sha256": "203d258907a15d5e64cd39db5e366a7c3d4d737566ba027309567e2b1c4cb81b",
+      "size": 1483,
+      "type": "file"
+    },
+    "immutable_eval/gt_holdout.json": {
+      "exec": false,
+      "sha256": "a55eec35ce3deb2df47f272b4894732837e86573d10b604402382de7b24fefd5",
+      "size": 1483,
+      "type": "file"
+    },
+    "immutable_eval/gt_search.json": {
+      "exec": false,
+      "sha256": "45a78f5be5504f2dad0f736d4f071c72b9755031e2142a1da7281bc6cde4a624",
+      "size": 1466,
+      "type": "file"
+    },
+    "immutable_eval/ids_confirm.json": {
+      "exec": false,
+      "sha256": "22588936704fdf950d7beff72acd154f17fae73bd496c7d38737905ccb131f01",
+      "size": 475,
+      "type": "file"
+    },
+    "immutable_eval/ids_holdout.json": {
+      "exec": false,
+      "sha256": "0a5fecc86aeba7773156e6a9adc7d0f13df2b195505a50e850588df5b6f77de9",
+      "size": 475,
+      "type": "file"
+    },
+    "immutable_eval/ids_search.json": {
+      "exec": false,
+      "sha256": "b74d6da146d7e6764057160b0ca729f8db7a79f371bb2f006c99f97e47458a48",
+      "size": 459,
+      "type": "file"
+    }
+  },
+  "entry_count": 11,
+  "manifest_root_sha256": "0ca7f837fbaa8a96be4ca6f47681b1df7e0043b4bd3d23c140f97396179171a5",
+  "protected_roots": [
+    "immutable_eval"
+  ],
+  "root": "/scratch/autosota_governed_v5/tracks/bench_d9_pinet_qp",
+  "schema_version": "3.0"
+}

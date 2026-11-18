@@ -1,0 +1,60 @@
+{
+  "created_at_utc": "2026-11-18T21:11:35.901573+00:00",
+  "entries": {
+    "immutable_eval/games_oracle_confirm.json": {
+      "exec": false,
+      "sha256": "1d3ae540c7ca3fc505728ae7139b9a5f493310fc24e6027d01c9ad3a9f96a371",
+      "size": 448050,
+      "type": "file"
+    },
+    "immutable_eval/games_oracle_holdout.json": {
+      "exec": false,
+      "sha256": "9c6ea9a4ad7145a0e45ae08b47ad304de7e4790ede20b0ade41d2f9014de9f62",
+      "size": 447036,
+      "type": "file"
+    },
+    "immutable_eval/games_oracle_search.json": {
+      "exec": false,
+      "sha256": "a01cabd9a3c5fa386d99fec97bb7bd747802588c58b1769657f87cc5d19bbaf6",
+      "size": 450381,
+      "type": "file"
+    },
+    "immutable_eval/gate_rules_confirm.json": {
+      "exec": false,
+      "sha256": "b0f3b0bc56a957d5106f4cdb4f9a4bcaea74d8602726bc9f003df9672bcc2e92",
+      "size": 657,
+      "type": "file"
+    },
+    "immutable_eval/gate_rules_search.json": {
+      "exec": false,
+      "sha256": "e13ce2b9160bd8b949562eea23e144bd63bfe5e5698e183a2be9ae0991d49e8d",
+      "size": 361,
+      "type": "file"
+    },
+    "immutable_eval/ids_confirm.json": {
+      "exec": false,
+      "sha256": "d44072da074d432a5822f3622c1b6d8e3584510c1488591926c9586d070955e3",
+      "size": 415,
+      "type": "file"
+    },
+    "immutable_eval/ids_holdout.json": {
+      "exec": false,
+      "sha256": "f23f4368c86e03c19ce0cd91821284b4ab35dba78a5f3bd75a035c5b8879dc1c",
+      "size": 415,
+      "type": "file"
+    },
+    "immutable_eval/ids_search.json": {
+      "exec": false,
+      "sha256": "129c6eb755844d216562de4979cfac69dc043c23adb96de2bc7698d0b0e81d1c",
+      "size": 399,
+      "type": "file"
+    }
+  },
+  "entry_count": 8,
+  "manifest_root_sha256": "373e4bb4578ad8e55d5df985b924806140620111cf1f2807409b28838552460e",
+  "protected_roots": [
+    "immutable_eval"
+  ],
+  "root": "/scratch/autosota_governed_v5/tracks/bench_d1_shapiq",
+  "schema_version": "3.0"
+}

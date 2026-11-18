@@ -1,0 +1,25 @@
+{
+  "aggregation_weighting": "equal_stratum",
+  "alpha_one_sided": 0.025,
+  "bootstrap_mode": "crossed_seed_cluster",
+  "decision_stage": "confirm",
+  "direction": "maximize",
+  "expected_strata": [
+    "ba",
+    "er",
+    "regular_ish",
+    "weighted_frustrated"
+  ],
+  "max_confirm_looks": 2,
+  "max_ratio_vs_baseline": {
+    "eval_wall_clock_sec": 1.6
+  },
+  "min_confirm_clusters": 12,
+  "min_improvement": 0.25,
+  "primary_metric": "maxcut_value",
+  "required_comparators": [
+    "d7_paper_rlsa_langevin",
+    "d7_autosota_rlsa_leap",
+    "d7_comp_spectral_greedy"
+  ]
+}

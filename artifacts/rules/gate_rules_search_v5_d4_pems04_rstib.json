@@ -1,0 +1,9 @@
+{
+  "decision_stage": "search",
+  "direction": "minimize",
+  "max_ratio_vs_baseline": {
+    "eval_wall_clock_sec": 1.8
+  },
+  "min_improvement": 0.15,
+  "primary_metric": "traffic_mae"
+}

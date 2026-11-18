@@ -1,0 +1,158 @@
+{
+  "autosota_audit": {
+    "autosota_id": "d2_paper_latent_score_reweight",
+    "autosota_metrics": {
+      "eval_wall_clock_sec": 10.822512076003477,
+      "mean_acc": 0.7413194444444444,
+      "worst_group_acc": 0.5395070433581579
+    },
+    "baseline_metrics": {
+      "eval_wall_clock_sec": 10.345680862898007,
+      "mean_acc": 0.7977430555555556,
+      "worst_group_acc": 0.3609623015873016
+    },
+    "decision": "PROVISIONAL_KEEP",
+    "tripwires": []
+  },
+  "baseline_search": {
+    "eval_wall_clock_sec": 10.345680862898007,
+    "mean_acc": 0.7977430555555556,
+    "worst_group_acc": 0.3609623015873016
+  },
+  "benchmark": "d2",
+  "confirm_verdicts": {
+    "d2_base_erm_mlp": {
+      "cand": 0.6331326472100387,
+      "decision": "PROMOTE",
+      "gain": 0.23834123245956046,
+      "lcb": 0.17995089864480274,
+      "ref": 0.39479141475047824,
+      "signflip_method": "exact",
+      "signflip_p": 1.52587890625e-05,
+      "tripwires": []
+    },
+    "d2_comp_group_dro": {
+      "cand": 0.6331326472100387,
+      "decision": "ROLLBACK",
+      "gain": 0.009465190010029545,
+      "lcb": -0.03595359901724304,
+      "ref": 0.6236674572000092,
+      "signflip_method": "exact",
+      "signflip_p": 0.41778564453125,
+      "tripwires": []
+    },
+    "d2_paper_latent_score_reweight": {
+      "cand": 0.6331326472100387,
+      "decision": "PROMOTE",
+      "gain": 0.09274851484896562,
+      "lcb": 0.03727503522826847,
+      "ref": 0.5403841323610731,
+      "signflip_method": "exact",
+      "signflip_p": 0.00250244140625,
+      "tripwires": []
+    }
+  },
+  "head_to_head_confirm_vs_w4_champ": {
+    "cowork_cand_id": "d2_v5_r1_astra_boundary8",
+    "cowork_metric": 0.6331326472100387,
+    "decision": "ROLLBACK",
+    "lcb_one_sided": -0.02163913060833833,
+    "signed_gain_cowork_over_w4": 0.010022132756533852,
+    "signflip_p": 0.3699951171875,
+    "tripwires": [],
+    "w4_champ_id": "d2_w4_champ_poly_minimax",
+    "w4_champ_metric": 0.6231105144535048
+  },
+  "head_to_head_holdout_vs_w4_champ": null,
+  "holdout_finalized": null,
+  "holdout_reserve": {
+    "artifact_sha_mismatches": [],
+    "candidate_id": "d2_v5_r1_astra_boundary8",
+    "missing_or_failed_comparators": [
+      "d2_comp_group_dro:ROLLBACK"
+    ],
+    "status": "BLOCKED_NOT_CONFIRMED"
+  },
+  "ledger_verification": {
+    "entries": 7,
+    "head_sha256": "c441cf7d1475a1843047f5554c97506218034cb72d34a3ef2b4625b52e545621",
+    "status": "VERIFIED"
+  },
+  "manifest_root_sha256": "946288ff0c09046f32cc83c9b716b8fbeef6700048bf5b431deeb406cbceee57",
+  "round1_leaderboard": {
+    "d2_v5_r1_astra_boundary8": {
+      "decision_vs_running_incumbent": "PROVISIONAL_KEEP",
+      "metrics": {
+        "eval_wall_clock_sec": 8.108537504915148,
+        "mean_acc": 0.7833333333333333,
+        "worst_group_acc": 0.6269178368308501
+      },
+      "proposer_agent": "Cowork_GPT_6.2_Astra_Max",
+      "redacted_feedback": {
+        "candidate_id": "d2_v5_r1_astra_boundary8",
+        "comparator_id": "d2_v5_r1_opus_mpot",
+        "consecutive_rollbacks": 0,
+        "decision": "PROVISIONAL_KEEP",
+        "decision_stage": "search",
+        "halt_recommended": false,
+        "trial_id": "d2_v5_r1_02_d2_v5_r1_astra_boundary8",
+        "tripwires": []
+      },
+      "tripwires": []
+    },
+    "d2_v5_r1_opus_mpot": {
+      "decision_vs_running_incumbent": "PROVISIONAL_KEEP",
+      "metrics": {
+        "eval_wall_clock_sec": 9.939665589015931,
+        "mean_acc": 0.7803819444444445,
+        "worst_group_acc": 0.6079196769127984
+      },
+      "proposer_agent": "Cowork_Opus_5.5_Max",
+      "redacted_feedback": {
+        "candidate_id": "d2_v5_r1_opus_mpot",
+        "comparator_id": "d2_base_erm_mlp",
+        "consecutive_rollbacks": 0,
+        "decision": "PROVISIONAL_KEEP",
+        "decision_stage": "search",
+        "halt_recommended": false,
+        "trial_id": "d2_v5_r1_01_d2_v5_r1_opus_mpot",
+        "tripwires": []
+      },
+      "tripwires": []
+    }
+  },
+  "round2_leaderboard": {
+    "d2_v5_r2_astra_crossover": {
+      "decision_vs_running_incumbent": "ROLLBACK",
+      "metrics": {
+        "eval_wall_clock_sec": 5.531383000081405,
+        "mean_acc": 0.7828125,
+        "worst_group_acc": 0.6183823163214123
+      },
+      "proposer_agent": "Cowork_R2_GPT_6.2_Astra_Max",
+      "tripwires": []
+    },
+    "d2_v5_r2_opus_crossover": {
+      "decision_vs_running_incumbent": "ROLLBACK",
+      "metrics": {
+        "eval_wall_clock_sec": 11.327367380959913,
+        "mean_acc": 0.7840277777777778,
+        "worst_group_acc": 0.6201802228711621
+      },
+      "proposer_agent": "Cowork_R2_Opus_5.5_Max",
+      "tripwires": []
+    }
+  },
+  "selected_finalist": "d2_v5_r1_astra_boundary8",
+  "selected_finalist_proposer": "Cowork_GPT_6.2_Astra_Max",
+  "w4_headless_champ_search": {
+    "decision_vs_baseline": "PROVISIONAL_KEEP",
+    "metrics": {
+      "eval_wall_clock_sec": 2.722560827154666,
+      "mean_acc": 0.7753472222222222,
+      "worst_group_acc": 0.6039611876490596
+    },
+    "tripwires": [],
+    "w4_champ_id": "d2_w4_champ_poly_minimax"
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "autosota_audit": {
+    "autosota_id": "d4_autosota_rstib_ns50_zeroib",
+    "autosota_metrics": {
+      "eval_wall_clock_sec": 20.32340696407482,
+      "traffic_mae": 49.66934140523275
+    },
+    "baseline_metrics": {
+      "eval_wall_clock_sec": 10.217724320944399,
+      "traffic_mae": 50.3588441212972
+    },
+    "decision": "ROLLBACK",
+    "tripwires": [
+      "baseline_ratio_too_high:eval_wall_clock_sec_ratio=1.9890>1.8"
+    ]
+  },
+  "baseline_search": {
+    "eval_wall_clock_sec": 10.217724320944399,
+    "traffic_mae": 50.3588441212972
+  },
+  "benchmark": "d4",
+  "confirm_verdicts": {
+    "d4_base_huber_ridge": {
+      "cand": 23.1408789952596,
+      "decision": "PROMOTE",
+      "gain": 25.56683127085368,
+      "lcb": 23.99055290222168,
+      "ref": 48.70771026611328,
+      "signflip_method": "exact",
+      "signflip_p": 0.000244140625,
+      "tripwires": []
+    },
+    "d4_comp_spatial_mlp": {
+      "cand": 23.1408789952596,
+      "decision": "PROMOTE",
+      "gain": 5.264453252156578,
+      "lcb": 4.145606835683186,
+      "ref": 28.40533224741618,
+      "signflip_method": "exact",
+      "signflip_p": 0.000244140625,
+      "tripwires": []
+    },
+    "d4_paper_rstib_ns12": {
+      "cand": 23.1408789952596,
+      "decision": "PROMOTE",
+      "gain": 24.96392917633057,
+      "lcb": 23.17619450887044,
+      "ref": 48.10480817159017,
+      "signflip_method": "exact",
+      "signflip_p": 0.0,
+      "tripwires": []
+    }
+  },
+  "head_to_head_confirm_vs_w4_champ": {
+    "cowork_cand_id": "d4_v5_r1_opus_repair",
+    "cowork_metric": 23.1408789952596,
+    "decision": "ROLLBACK",
+    "lcb_one_sided": -1.6997431119283064,
+    "signed_gain_cowork_over_w4": -1.1758287747700997,
+    "signflip_p": 1.0,
+    "tripwires": [],
+    "w4_champ_id": "d4_w4_champ_kriging_svd",
+    "w4_champ_metric": 21.965050220489502
+  },
+  "head_to_head_holdout_vs_w4_champ": {
+    "cowork_cand_id": "d4_v5_r1_opus_repair",
+    "cowork_metric": 24.818538029988606,
+    "decision": "ROLLBACK",
+    "lcb_one_sided": -2.1696884632110596,
+    "signed_gain_cowork_over_w4": -1.648760398228962,
+    "signflip_p": 1.0,
+    "w4_champ_id": "d4_w4_champ_kriging_svd",
+    "w4_champ_metric": 23.169777631759644
+  },
+  "holdout_finalized": {
+    "comparisons": {
+      "d4_base_huber_ridge": {
+        "bootstrap_mode": "cluster_1d",
+        "ci95_high": 27.48507610956828,
+        "ci95_low": 23.604616483052574,
+        "distinct_cluster_deltas": 12,
+        "insufficient_replication": false,
+        "lcb_one_sided": 23.604616483052574,
+        "low_cluster_warning": false,
+        "n_clusters": 12,
+        "n_items": 12,
+        "n_positive_clusters": 12,
+        "n_seeds": 0,
+        "n_strata": 1,
+        "obs_candidate": 24.818538029988606,
+        "obs_reference": 50.36339886983236,
+        "se": 0.9757452095303334,
+        "signed_gain": 25.544860839843754,
+        "signflip_method": "exact",
+        "signflip_p_one_sided": 0.0,
+        "statistic": "mean",
+        "weighting": "equal_item"
+      },
+      "d4_comp_spatial_mlp": {
+        "bootstrap_mode": "cluster_1d",
+        "ci95_high": 7.086845080057778,
+        "ci95_low": 4.84473911921183,
+        "distinct_cluster_deltas": 12,
+        "insufficient_replication": false,
+        "lcb_one_sided": 4.84473911921183,
+        "low_cluster_warning": false,
+        "n_clusters": 12,
+        "n_items": 12,
+        "n_positive_clusters": 12,
+        "n_seeds": 0,
+        "n_strata": 1,
+        "obs_candidate": 24.818538029988606,
+        "obs_reference": 30.6359650293986,
+        "se": 0.5853004987228619,
+        "signed_gain": 5.817426999409996,
+        "signflip_method": "exact",
+        "signflip_p_one_sided": 0.000244140625,
+        "statistic": "mean",
+        "weighting": "equal_item"
+      },
+      "d4_paper_rstib_ns12": {
+        "bootstrap_mode": "cluster_1d",
+        "ci95_high": 26.49578634897868,
+        "ci95_low": 22.686890602111816,
+        "distinct_cluster_deltas": 12,
+        "insufficient_replication": false,
+        "lcb_one_sided": 22.686890602111816,
+        "low_cluster_warning": false,
+        "n_clusters": 12,
+        "n_items": 12,
+        "n_positive_clusters": 12,
+        "n_seeds": 0,
+        "n_strata": 1,
+        "obs_candidate": 24.818538029988606,
+        "obs_reference": 49.313852310180664,
+        "se": 0.990419452022511,
+        "signed_gain": 24.49531428019206,
+        "signflip_method": "exact",
+        "signflip_p_one_sided": 0.0,
+        "statistic": "mean",
+        "weighting": "equal_item"
+      }
+    },
+    "holdout_guardrails_passed": true,
+    "holdout_seal_sha256": "6c3ca2dd2ef05eb30385b5f141b82f36359112cf87ccba8dc87200a855ee15ab",
+    "holdout_tripwires": [],
+    "ledger_entry_sha256": "2167493b702db2bcbbf7f2fac219b07852e10052e26b74052691bab0df57e95f",
+    "seal_file": "/scratch/autosota_governed_v5/seals/HOLDOUT_SEAL_v5_d4.json",
+    "status": "FINALIZED"
+  },
+  "holdout_reserve": {
+    "candidate_artifact_sha256": "672f1ddc47420cb4f6d2c9b1429afdd4c0ef1f15ab77d22b304c113e251c89d9",
+    "candidate_id": "d4_v5_r1_opus_repair",
+    "ledger_head_at_reserve_sha256": "738b000381931e8e9df08d74276bf091f730fdd4f12940bffc0ce1d0d541ba5b",
+    "manifest_root_sha256": "291020a4a79554c5a6081386fc9ced27d6480c5f8474ef05969bfc69493160cd",
+    "required_comparators_verified": [
+      "d4_paper_rstib_ns12",
+      "d4_base_huber_ridge",
+      "d4_comp_spatial_mlp"
+    ],
+    "reserved_at_utc": "2026-11-18T22:00:26.737345+00:00",
+    "rules_sha256": "3cb25d55a3b59a78ca2d597585a344baab9021cc6048e4b6e85f12e4141cf896",
+    "schema_version": "3.0",
+    "seal_file": "/scratch/autosota_governed_v5/seals/HOLDOUT_SEAL_v5_d4.json",
+    "status": "RESERVED"
+  },
+  "ledger_verification": {
+    "entries": 8,
+    "head_sha256": "2167493b702db2bcbbf7f2fac219b07852e10052e26b74052691bab0df57e95f",
+    "status": "VERIFIED"
+  },
+  "manifest_root_sha256": "291020a4a79554c5a6081386fc9ced27d6480c5f8474ef05969bfc69493160cd",
+  "round1_leaderboard": {
+    "d4_v5_r1_astra_bayes_spike_queue": {
+      "decision_vs_running_incumbent": "ROLLBACK",
+      "metrics": {
+        "eval_wall_clock_sec": 5.714265862945467,
+        "traffic_mae": 28.227706750233967
+      },
+      "proposer_agent": "Cowork_GPT_6.2_Astra_Max",
+      "redacted_feedback": {
+        "candidate_id": "d4_v5_r1_astra_bayes_spike_queue",
+        "comparator_id": "d4_v5_r1_opus_repair",
+        "consecutive_rollbacks": 1,
+        "decision": "ROLLBACK",
+        "decision_stage": "search",
+        "halt_recommended": false,
+        "trial_id": "d4_v5_r1_02_d4_v5_r1_astra_bayes_spike_queue",
+        "tripwires": []
+      },
+      "tripwires": []
+    },
+    "d4_v5_r1_opus_repair": {
+      "decision_vs_running_incumbent": "PROVISIONAL_KEEP",
+      "metrics": {
+        "eval_wall_clock_sec": 15.509241164894775,
+        "traffic_mae": 24.87776056925456
+      },
+      "proposer_agent": "Cowork_Opus_5.5_Max",
+      "redacted_feedback": {
+        "candidate_id": "d4_v5_r1_opus_repair",
+        "comparator_id": "d4_paper_rstib_ns12",
+        "consecutive_rollbacks": 0,
+        "decision": "PROVISIONAL_KEEP",
+        "decision_stage": "search",
+        "halt_recommended": false,
+        "trial_id": "d4_v5_r1_01_d4_v5_r1_opus_repair",
+        "tripwires": []
+      },
+      "tripwires": []
+    }
+  },
+  "round2_leaderboard": {
+    "d4_v5_r2_astra_crossover": {
+      "decision_vs_running_incumbent": "ROLLBACK",
+      "metrics": {
+        "eval_wall_clock_sec": 22.88457860983908,
+        "traffic_mae": 23.882678508758545
+      },
+      "proposer_agent": "Cowork_R2_GPT_6.2_Astra_Max",
+      "tripwires": [
+        "baseline_ratio_too_high:eval_wall_clock_sec_ratio=2.2397>1.8"
+      ]
+    },
+    "d4_v5_r2_opus_crossover": {
+      "decision_vs_running_incumbent": "ROLLBACK",
+      "metrics": {
+        "eval_wall_clock_sec": 26.375151501968503,
+        "traffic_mae": 25.04865821202596
+      },
+      "proposer_agent": "Cowork_R2_Opus_5.5_Max",
+      "tripwires": [
+        "baseline_ratio_too_high:eval_wall_clock_sec_ratio=2.5813>1.8"
+      ]
+    }
+  },
+  "selected_finalist": "d4_v5_r1_opus_repair",
+  "selected_finalist_proposer": "Cowork_Opus_5.5_Max",
+  "w4_headless_champ_search": {
+    "decision_vs_baseline": "PROVISIONAL_KEEP",
+    "metrics": {
+      "eval_wall_clock_sec": 17.71507775504142,
+      "traffic_mae": 23.457629362742107
+    },
+    "tripwires": [],
+    "w4_champ_id": "d4_w4_champ_kriging_svd"
+  }
+}

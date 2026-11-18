@@ -1,0 +1,30 @@
+{
+  "aggregation_weighting": "equal_stratum",
+  "alpha_one_sided": 0.025,
+  "decision_stage": "confirm",
+  "direction": "minimize",
+  "expected_strata": [
+    "high_coupled",
+    "ill_cond",
+    "tight_box",
+    "well_cond"
+  ],
+  "hard_ceilings": {
+    "max_feasibility_err": 0.0001
+  },
+  "max_confirm_looks": 2,
+  "max_ratio_vs_baseline": {
+    "eval_wall_clock_sec": 1.25
+  },
+  "min_confirm_clusters": 12,
+  "min_improvement": 0.0005,
+  "per_stratum_hard_ceilings": {
+    "feasibility_err": 0.0001
+  },
+  "primary_metric": "opt_rmse",
+  "required_comparators": [
+    "d9_paper_pinet_dr50",
+    "d9_comp_overrelaxed_dr50",
+    "d9_comp_dykstra50"
+  ]
+}

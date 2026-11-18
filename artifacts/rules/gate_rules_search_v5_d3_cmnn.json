@@ -1,0 +1,16 @@
+{
+  "aggregation_weighting": "equal_stratum",
+  "decision_stage": "search",
+  "direction": "minimize",
+  "hard_ceilings": {
+    "max_monotonicity_viol_rate": 0.0
+  },
+  "max_ratio_vs_baseline": {
+    "eval_wall_clock_sec": 2.2
+  },
+  "min_improvement": 0.004,
+  "per_stratum_hard_ceilings": {
+    "monotonicity_viol_rate": 0.0
+  },
+  "primary_metric": "std_rmse"
+}

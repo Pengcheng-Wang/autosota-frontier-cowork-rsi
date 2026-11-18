@@ -1,0 +1,17 @@
+{
+  "alpha_one_sided": 0.025,
+  "decision_stage": "confirm",
+  "direction": "minimize",
+  "max_confirm_looks": 2,
+  "max_ratio_vs_baseline": {
+    "eval_wall_clock_sec": 1.8
+  },
+  "min_confirm_clusters": 12,
+  "min_improvement": 0.15,
+  "primary_metric": "traffic_mae",
+  "required_comparators": [
+    "d4_paper_rstib_ns12",
+    "d4_base_huber_ridge",
+    "d4_comp_spatial_mlp"
+  ]
+}

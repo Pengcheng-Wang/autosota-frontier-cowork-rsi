@@ -1,0 +1,77 @@
+{
+  "autosota_audit": {
+    "autosota_id": "d3_autosota_cmnn_150ep",
+    "autosota_metrics": {
+      "eval_wall_clock_sec": 20.67215647199191,
+      "max_monotonicity_viol_rate": 0.0,
+      "std_rmse": 0.8647598036921892
+    },
+    "baseline_metrics": {
+      "eval_wall_clock_sec": 16.568501915084198,
+      "max_monotonicity_viol_rate": 0.0,
+      "std_rmse": 0.8718016502595705
+    },
+    "decision": "PROVISIONAL_KEEP",
+    "tripwires": []
+  },
+  "baseline_search": {
+    "eval_wall_clock_sec": 16.568501915084198,
+    "max_monotonicity_viol_rate": 0.0,
+    "std_rmse": 0.8718016502595705
+  },
+  "bench_id": "d3",
+  "manifest_root_sha256": "f1dc1d7ce463cf5129a2d29c1a0694debf6e68f4368f590ea60cb07ab99d5144",
+  "round1_incumbent_id": "d3_v5_r1_astra_minmax_spline",
+  "round1_leaderboard": {
+    "d3_v5_r1_astra_minmax_spline": {
+      "decision_vs_running_incumbent": "PROVISIONAL_KEEP",
+      "metrics": {
+        "eval_wall_clock_sec": 1.1126327950041741,
+        "max_monotonicity_viol_rate": 0.0,
+        "std_rmse": 0.7349196191418911
+      },
+      "proposer_agent": "Cowork_GPT_6.2_Astra_Max",
+      "redacted_feedback": {
+        "candidate_id": "d3_v5_r1_astra_minmax_spline",
+        "comparator_id": "d3_v5_r1_opus_gl_nnls",
+        "consecutive_rollbacks": 0,
+        "decision": "PROVISIONAL_KEEP",
+        "decision_stage": "search",
+        "halt_recommended": false,
+        "trial_id": "d3_v5_r1_02_d3_v5_r1_astra_minmax_spline",
+        "tripwires": []
+      },
+      "tripwires": []
+    },
+    "d3_v5_r1_opus_gl_nnls": {
+      "decision_vs_running_incumbent": "PROVISIONAL_KEEP",
+      "metrics": {
+        "eval_wall_clock_sec": 1.8721597001422197,
+        "max_monotonicity_viol_rate": 0.0,
+        "std_rmse": 0.7594310309334642
+      },
+      "proposer_agent": "Cowork_Opus_5.5_Max",
+      "redacted_feedback": {
+        "candidate_id": "d3_v5_r1_opus_gl_nnls",
+        "comparator_id": "d3_paper_cmnn_100ep",
+        "consecutive_rollbacks": 0,
+        "decision": "PROVISIONAL_KEEP",
+        "decision_stage": "search",
+        "halt_recommended": false,
+        "trial_id": "d3_v5_r1_01_d3_v5_r1_opus_gl_nnls",
+        "tripwires": []
+      },
+      "tripwires": []
+    }
+  },
+  "w4_headless_champ_search": {
+    "decision_vs_baseline": "PROVISIONAL_KEEP",
+    "metrics": {
+      "eval_wall_clock_sec": 24.48399062315002,
+      "max_monotonicity_viol_rate": 0.0,
+      "std_rmse": 0.7796544187353824
+    },
+    "tripwires": [],
+    "w4_champ_id": "d3_w4_champ_convex_concave"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "decision_stage": "search",
+  "direction": "maximize",
+  "max_ratio_vs_baseline": {
+    "eval_wall_clock_sec": 2.5
+  },
+  "min_improvement": 0.008,
+  "primary_metric": "edge_auprc"
+}

@@ -1,0 +1,32 @@
+{
+  "aggregation_weighting": "equal_stratum",
+  "alpha_one_sided": 0.025,
+  "bootstrap_mode": "crossed_seed_cluster",
+  "decision_stage": "confirm",
+  "direction": "minimize",
+  "expected_strata": [
+    "fair_bayes_logit",
+    "sphere_mog",
+    "stiefel_2frame"
+  ],
+  "hard_ceilings": {
+    "max_grad_calls": 400.0,
+    "max_manifold_err": 0.001
+  },
+  "max_confirm_looks": 2,
+  "max_ratio_vs_baseline": {
+    "eval_wall_clock_sec": 2.2
+  },
+  "min_confirm_clusters": 12,
+  "min_improvement": 0.004,
+  "per_stratum_hard_ceilings": {
+    "grad_calls": 400.0,
+    "manifold_err": 0.001
+  },
+  "primary_metric": "sliced_w1_dist",
+  "required_comparators": [
+    "d6_paper_olla_400",
+    "d6_comp_clangevin_newton_400",
+    "d6_comp_rattle_hmc_400"
+  ]
+}

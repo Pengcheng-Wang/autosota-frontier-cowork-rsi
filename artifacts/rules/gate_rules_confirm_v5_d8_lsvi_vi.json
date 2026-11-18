@@ -1,0 +1,23 @@
+{
+  "aggregation_weighting": "equal_stratum",
+  "alpha_one_sided": 0.025,
+  "decision_stage": "confirm",
+  "direction": "maximize",
+  "expected_strata": [
+    "acs_logit",
+    "adult_logit",
+    "compas_logit"
+  ],
+  "max_confirm_looks": 2,
+  "max_ratio_vs_baseline": {
+    "eval_wall_clock_sec": 2.2
+  },
+  "min_confirm_clusters": 12,
+  "min_improvement": 0.015,
+  "primary_metric": "elbo",
+  "required_comparators": [
+    "d8_paper_lsvi",
+    "d8_comp_laplace_newton",
+    "d8_comp_bbvi_reparam_1x"
+  ]
+}

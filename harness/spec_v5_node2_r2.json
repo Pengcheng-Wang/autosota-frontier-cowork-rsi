@@ -1,0 +1,32 @@
+{
+  "d7": {
+    "r1": {
+      "d7_v5_r1_opus_bit": "Cowork_Opus_5.5_Max",
+      "d7_v5_r1_astra_kl8_tabu": "Cowork_GPT_6.2_Astra_Max"
+    },
+    "r2": {
+      "d7_v5_r2_astra_crossover": "Cowork_R2_GPT_6.2_Astra_Max",
+      "d7_v5_r2_opus_crossover": "Cowork_R2_Opus_5.5_Max"
+    }
+  },
+  "d8": {
+    "r1": {
+      "d8_v5_r1_opus_qng_vi": "Cowork_Opus_5.5_Max",
+      "d8_v5_r1_astra_whitened_gh_lbfgs": "Cowork_GPT_6.2_Astra_Max"
+    },
+    "r2": {
+      "d8_v5_r2_astra_crossover": "Cowork_R2_GPT_6.2_Astra_Max",
+      "d8_v5_r2_opus_crossover": "Cowork_R2_Opus_5.5_Max"
+    }
+  },
+  "d9": {
+    "r1": {
+      "d9_v5_r1_opus_ad_ssn": "Cowork_Opus_5.5_Max",
+      "d9_v5_r1_astra_qr_ssn_cert": "Cowork_GPT_6.2_Astra_Max"
+    },
+    "r2": {
+      "d9_v5_r2_astra_crossover": "Cowork_R2_GPT_6.2_Astra_Max",
+      "d9_v5_r2_opus_crossover": "Cowork_R2_Opus_5.5_Max"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "d1": {
+    "r1": {
+      "d1_v5_r1_opus_bemc": "Cowork_Opus_5.5_Max",
+      "d1_v5_r1_astra_synergy_omp": "Cowork_GPT_6.2_Astra_Max"
+    }
+  },
+  "d2": {
+    "r1": {
+      "d2_v5_r1_opus_mpot": "Cowork_Opus_5.5_Max",
+      "d2_v5_r1_astra_boundary8": "Cowork_GPT_6.2_Astra_Max"
+    }
+  },
+  "d3": {
+    "r1": {
+      "d3_v5_r1_opus_gl_nnls": "Cowork_Opus_5.5_Max",
+      "d3_v5_r1_astra_minmax_spline": "Cowork_GPT_6.2_Astra_Max"
+    }
+  }
+}

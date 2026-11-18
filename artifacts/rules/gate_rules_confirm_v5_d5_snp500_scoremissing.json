@@ -1,0 +1,17 @@
+{
+  "alpha_one_sided": 0.025,
+  "decision_stage": "confirm",
+  "direction": "maximize",
+  "max_confirm_looks": 2,
+  "max_ratio_vs_baseline": {
+    "eval_wall_clock_sec": 2.5
+  },
+  "min_confirm_clusters": 10,
+  "min_improvement": 0.008,
+  "primary_metric": "edge_auprc",
+  "required_comparators": [
+    "d5_paper_msm_score_matching",
+    "d5_base_mean_impute_ridge",
+    "d5_comp_pairwise_cov_shrink"
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "autosota_audit": {
+    "autosota_id": "d9_autosota_pinet_dr10_infeasible",
+    "autosota_metrics": {
+      "eval_wall_clock_sec": 5.687737358995946,
+      "max_feasibility_err": 0.007173404054060972,
+      "opt_rmse": 0.3029946554630901
+    },
+    "baseline_metrics": {
+      "eval_wall_clock_sec": 27.112589944998035,
+      "max_feasibility_err": 4.574118861455645e-14,
+      "opt_rmse": 0.3029946554239353
+    },
+    "decision": "ROLLBACK",
+    "tripwires": [
+      "hard_ceiling_failed:max_feasibility_err=0.007173404054060972>0.0001",
+      "per_stratum_ceiling_failed:high_coupled.feasibility_err=0.003139>0.0001",
+      "per_stratum_ceiling_failed:ill_cond.feasibility_err=0.002838>0.0001",
+      "per_stratum_ceiling_failed:tight_box.feasibility_err=0.000260>0.0001",
+      "per_stratum_ceiling_failed:well_cond.feasibility_err=0.000107>0.0001"
+    ]
+  },
+  "baseline_search": {
+    "eval_wall_clock_sec": 27.112589944998035,
+    "max_feasibility_err": 4.574118861455645e-14,
+    "opt_rmse": 0.3029946554239353
+  },
+  "benchmark": "d9",
+  "confirm_verdicts": {
+    "d9_comp_dykstra50": {
+      "cand": 1.0297073828647008e-10,
+      "decision": "ROLLBACK",
+      "gain": 0.0005218029526809363,
+      "lcb": 0.000462118844142145,
+      "ref": 0.0005218030556516746,
+      "signflip_method": "exact",
+      "signflip_p": 0.3587188720703125,
+      "tripwires": []
+    },
+    "d9_comp_overrelaxed_dr50": {
+      "cand": 1.0297073828647008e-10,
+      "decision": "PROMOTE",
+      "gain": 0.5461391271411621,
+      "lcb": 0.5160637233028837,
+      "ref": 0.5461391272441328,
+      "signflip_method": "exact",
+      "signflip_p": 1.52587890625e-05,
+      "tripwires": []
+    },
+    "d9_paper_pinet_dr50": {
+      "cand": 1.0297073828647008e-10,
+      "decision": "PROMOTE",
+      "gain": 0.30342508630924914,
+      "lcb": 0.269879725774819,
+      "ref": 0.3034250864122199,
+      "signflip_method": "exact",
+      "signflip_p": 1.52587890625e-05,
+      "tripwires": []
+    }
+  },
+  "head_to_head_confirm_vs_w4_champ": {
+    "cowork_cand_id": "d9_v5_r2_astra_crossover",
+    "cowork_metric": 1.0297073828647008e-10,
+    "decision": "ROLLBACK",
+    "lcb_one_sided": 2.0821609410959194e-09,
+    "signed_gain_cowork_over_w4": 7.926751867427214e-08,
+    "signflip_p": 1.0,
+    "tripwires": [],
+    "w4_champ_id": "d9_w4_champ_vec_admm",
+    "w4_champ_metric": 7.937048941255861e-08
+  },
+  "head_to_head_holdout_vs_w4_champ": null,
+  "holdout_finalized": null,
+  "holdout_reserve": {
+    "artifact_sha_mismatches": [],
+    "candidate_id": "d9_v5_r2_astra_crossover",
+    "missing_or_failed_comparators": [
+      "d9_comp_dykstra50:ROLLBACK"
+    ],
+    "status": "BLOCKED_NOT_CONFIRMED"
+  },
+  "ledger_verification": {
+    "entries": 7,
+    "head_sha256": "63d462eee75528389ae454d8663536028603a53ef351da998a250617d01bc8ad",
+    "status": "VERIFIED"
+  },
+  "manifest_root_sha256": "0ca7f837fbaa8a96be4ca6f47681b1df7e0043b4bd3d23c140f97396179171a5",
+  "round1_leaderboard": {
+    "d9_v5_r1_astra_qr_ssn_cert": {
+      "decision_vs_running_incumbent": "ROLLBACK",
+      "metrics": {
+        "eval_wall_clock_sec": 7.848426898010075,
+        "max_feasibility_err": 5.694738791639509e-09,
+        "opt_rmse": 4.3511139146269034e-11
+      },
+      "proposer_agent": "Cowork_GPT_6.2_Astra_Max",
+      "redacted_feedback": {
+        "candidate_id": "d9_v5_r1_astra_qr_ssn_cert",
+        "comparator_id": "d9_v5_r1_opus_ad_ssn",
+        "consecutive_rollbacks": 1,
+        "decision": "ROLLBACK",
+        "decision_stage": "search",
+        "halt_recommended": false,
+        "trial_id": "d9_v5_r1_02_d9_v5_r1_astra_qr_ssn_cert",
+        "tripwires": []
+      },
+      "tripwires": []
+    },
+    "d9_v5_r1_opus_ad_ssn": {
+      "decision_vs_running_incumbent": "PROVISIONAL_KEEP",
+      "metrics": {
+        "eval_wall_clock_sec": 9.301251786993816,
+        "max_feasibility_err": 9.956697022417416e-09,
+        "opt_rmse": 1.4656523556775564e-10
+      },
+      "proposer_agent": "Cowork_Opus_5.5_Max",
+      "redacted_feedback": {
+        "candidate_id": "d9_v5_r1_opus_ad_ssn",
+        "comparator_id": "d9_paper_pinet_dr50",
+        "consecutive_rollbacks": 0,
+        "decision": "PROVISIONAL_KEEP",
+        "decision_stage": "search",
+        "halt_recommended": false,
+        "trial_id": "d9_v5_r1_01_d9_v5_r1_opus_ad_ssn",
+        "tripwires": []
+      },
+      "tripwires": []
+    }
+  },
+  "round2_leaderboard": {
+    "d9_v5_r2_astra_crossover": {
+      "decision_vs_running_incumbent": "ROLLBACK",
+      "metrics": {
+        "eval_wall_clock_sec": 7.206784480018541,
+        "max_feasibility_err": 7.93231702544972e-10,
+        "opt_rmse": 4.751849185064821e-11
+      },
+      "proposer_agent": "Cowork_R2_GPT_6.2_Astra_Max",
+      "tripwires": []
+    },
+    "d9_v5_r2_opus_crossover": {
+      "decision_vs_running_incumbent": "ROLLBACK",
+      "metrics": {
+        "eval_wall_clock_sec": 7.513895098993089,
+        "max_feasibility_err": 5.636757727245367e-11,
+        "opt_rmse": 4.039879540708e-11
+      },
+      "proposer_agent": "Cowork_R2_Opus_5.5_Max",
+      "tripwires": []
+    }
+  },
+  "selected_finalist": "d9_v5_r2_astra_crossover",
+  "selected_finalist_proposer": "Cowork_R2_GPT_6.2_Astra_Max",
+  "w4_headless_champ_search": {
+    "decision_vs_baseline": "PROVISIONAL_KEEP",
+    "metrics": {
+      "eval_wall_clock_sec": 31.270569218992023,
+      "max_feasibility_err": 4.311641492638074e-05,
+      "opt_rmse": 5.8466999691347894e-08
+    },
+    "tripwires": [],
+    "w4_champ_id": "d9_w4_champ_vec_admm"
+  }
+}

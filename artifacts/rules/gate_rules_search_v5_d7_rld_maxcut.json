@@ -1,0 +1,10 @@
+{
+  "aggregation_weighting": "equal_stratum",
+  "decision_stage": "search",
+  "direction": "maximize",
+  "max_ratio_vs_baseline": {
+    "eval_wall_clock_sec": 1.6
+  },
+  "min_improvement": 0.25,
+  "primary_metric": "maxcut_value"
+}

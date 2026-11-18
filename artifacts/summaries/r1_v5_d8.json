@@ -1,0 +1,73 @@
+{
+  "autosota_audit": {
+    "autosota_id": "d8_autosota_bbvi_8seed_long",
+    "autosota_metrics": {
+      "elbo": -72.69441754730487,
+      "eval_wall_clock_sec": 55.06875249600853
+    },
+    "baseline_metrics": {
+      "elbo": -72.54410122069486,
+      "eval_wall_clock_sec": 1.8654599990113638
+    },
+    "decision": "ROLLBACK",
+    "tripwires": [
+      "baseline_ratio_too_high:eval_wall_clock_sec_ratio=29.5202>2.2"
+    ]
+  },
+  "baseline_search": {
+    "elbo": -72.54410122069486,
+    "eval_wall_clock_sec": 1.8654599990113638
+  },
+  "bench_id": "d8",
+  "manifest_root_sha256": "d303327d12fbade59b622a68412f8be72e33a16222d554ed84fa051afce39234",
+  "round1_incumbent_id": "d8_v5_r1_opus_qng_vi",
+  "round1_leaderboard": {
+    "d8_v5_r1_astra_whitened_gh_lbfgs": {
+      "decision_vs_running_incumbent": "ROLLBACK",
+      "metrics": {
+        "elbo": -72.50433039602963,
+        "eval_wall_clock_sec": 1.9994482670153957
+      },
+      "proposer_agent": "Cowork_GPT_6.2_Astra_Max",
+      "redacted_feedback": {
+        "candidate_id": "d8_v5_r1_astra_whitened_gh_lbfgs",
+        "comparator_id": "d8_v5_r1_opus_qng_vi",
+        "consecutive_rollbacks": 1,
+        "decision": "ROLLBACK",
+        "decision_stage": "search",
+        "halt_recommended": false,
+        "trial_id": "d8_v5_r1_02_d8_v5_r1_astra_whitened_gh_lbfgs",
+        "tripwires": []
+      },
+      "tripwires": []
+    },
+    "d8_v5_r1_opus_qng_vi": {
+      "decision_vs_running_incumbent": "PROVISIONAL_KEEP",
+      "metrics": {
+        "elbo": -72.50432734302812,
+        "eval_wall_clock_sec": 0.5076114289986435
+      },
+      "proposer_agent": "Cowork_Opus_5.5_Max",
+      "redacted_feedback": {
+        "candidate_id": "d8_v5_r1_opus_qng_vi",
+        "comparator_id": "d8_paper_lsvi",
+        "consecutive_rollbacks": 0,
+        "decision": "PROVISIONAL_KEEP",
+        "decision_stage": "search",
+        "halt_recommended": false,
+        "trial_id": "d8_v5_r1_01_d8_v5_r1_opus_qng_vi",
+        "tripwires": []
+      },
+      "tripwires": []
+    }
+  },
+  "w4_headless_champ_search": {
+    "decision_vs_baseline": "PROVISIONAL_KEEP",
+    "metrics": {
+      "elbo": -72.50521824712122,
+      "eval_wall_clock_sec": 3.174550066003576
+    },
+    "tripwires": [],
+    "w4_champ_id": "d8_w4_champ_qmc_natgrad"
+  }
+}

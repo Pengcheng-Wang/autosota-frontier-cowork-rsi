@@ -1,0 +1,73 @@
+{
+  "autosota_audit": {
+    "autosota_id": "d4_autosota_rstib_ns50_zeroib",
+    "autosota_metrics": {
+      "eval_wall_clock_sec": 20.32340696407482,
+      "traffic_mae": 49.66934140523275
+    },
+    "baseline_metrics": {
+      "eval_wall_clock_sec": 10.217724320944399,
+      "traffic_mae": 50.3588441212972
+    },
+    "decision": "ROLLBACK",
+    "tripwires": [
+      "baseline_ratio_too_high:eval_wall_clock_sec_ratio=1.9890>1.8"
+    ]
+  },
+  "baseline_search": {
+    "eval_wall_clock_sec": 10.217724320944399,
+    "traffic_mae": 50.3588441212972
+  },
+  "bench_id": "d4",
+  "manifest_root_sha256": "291020a4a79554c5a6081386fc9ced27d6480c5f8474ef05969bfc69493160cd",
+  "round1_incumbent_id": "d4_v5_r1_opus_repair",
+  "round1_leaderboard": {
+    "d4_v5_r1_astra_bayes_spike_queue": {
+      "decision_vs_running_incumbent": "ROLLBACK",
+      "metrics": {
+        "eval_wall_clock_sec": 5.714265862945467,
+        "traffic_mae": 28.227706750233967
+      },
+      "proposer_agent": "Cowork_GPT_6.2_Astra_Max",
+      "redacted_feedback": {
+        "candidate_id": "d4_v5_r1_astra_bayes_spike_queue",
+        "comparator_id": "d4_v5_r1_opus_repair",
+        "consecutive_rollbacks": 1,
+        "decision": "ROLLBACK",
+        "decision_stage": "search",
+        "halt_recommended": false,
+        "trial_id": "d4_v5_r1_02_d4_v5_r1_astra_bayes_spike_queue",
+        "tripwires": []
+      },
+      "tripwires": []
+    },
+    "d4_v5_r1_opus_repair": {
+      "decision_vs_running_incumbent": "PROVISIONAL_KEEP",
+      "metrics": {
+        "eval_wall_clock_sec": 15.509241164894775,
+        "traffic_mae": 24.87776056925456
+      },
+      "proposer_agent": "Cowork_Opus_5.5_Max",
+      "redacted_feedback": {
+        "candidate_id": "d4_v5_r1_opus_repair",
+        "comparator_id": "d4_paper_rstib_ns12",
+        "consecutive_rollbacks": 0,
+        "decision": "PROVISIONAL_KEEP",
+        "decision_stage": "search",
+        "halt_recommended": false,
+        "trial_id": "d4_v5_r1_01_d4_v5_r1_opus_repair",
+        "tripwires": []
+      },
+      "tripwires": []
+    }
+  },
+  "w4_headless_champ_search": {
+    "decision_vs_baseline": "PROVISIONAL_KEEP",
+    "metrics": {
+      "eval_wall_clock_sec": 17.71507775504142,
+      "traffic_mae": 23.457629362742107
+    },
+    "tripwires": [],
+    "w4_champ_id": "d4_w4_champ_kriging_svd"
+  }
+}

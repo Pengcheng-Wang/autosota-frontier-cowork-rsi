@@ -1,0 +1,30 @@
+{
+  "aggregation_weighting": "equal_stratum",
+  "alpha_one_sided": 0.025,
+  "decision_stage": "confirm",
+  "direction": "maximize",
+  "expected_strata": [
+    "adult",
+    "bike",
+    "california",
+    "soum"
+  ],
+  "hard_ceilings": {
+    "max_coalition_evals": 200.0
+  },
+  "max_confirm_looks": 2,
+  "max_ratio_vs_baseline": {
+    "eval_wall_clock_sec": 2.5
+  },
+  "min_confirm_clusters": 12,
+  "min_improvement": 0.01,
+  "per_stratum_hard_ceilings": {
+    "coalition_evals": 200.0
+  },
+  "primary_metric": "precision_at_10",
+  "required_comparators": [
+    "d1_base_mc_antithetic_200",
+    "d1_paper_svarmiq_200",
+    "d1_autosota_stratsize_1x_200"
+  ]
+}

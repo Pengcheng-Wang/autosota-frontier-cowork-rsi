@@ -1,0 +1,31 @@
+{
+  "aggregation_weighting": "equal_stratum",
+  "alpha_one_sided": 0.025,
+  "bootstrap_mode": "crossed_seed_cluster",
+  "decision_stage": "confirm",
+  "direction": "minimize",
+  "expected_strata": [
+    "auto",
+    "blog",
+    "compas",
+    "heart"
+  ],
+  "hard_ceilings": {
+    "max_monotonicity_viol_rate": 0.0
+  },
+  "max_confirm_looks": 2,
+  "max_ratio_vs_baseline": {
+    "eval_wall_clock_sec": 2.2
+  },
+  "min_confirm_clusters": 12,
+  "min_improvement": 0.004,
+  "per_stratum_hard_ceilings": {
+    "monotonicity_viol_rate": 0.0
+  },
+  "primary_metric": "std_rmse",
+  "required_comparators": [
+    "d3_paper_cmnn_100ep",
+    "d3_autosota_cmnn_150ep",
+    "d3_comp_monotone_ridge_spline"
+  ]
+}

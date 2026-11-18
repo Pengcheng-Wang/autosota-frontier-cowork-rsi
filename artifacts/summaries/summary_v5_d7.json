@@ -1,0 +1,244 @@
+{
+  "autosota_audit": {
+    "autosota_id": "d7_autosota_rlsa_leap",
+    "autosota_metrics": {
+      "eval_wall_clock_sec": 1.7042129379988182,
+      "maxcut_value": 484.9931140625
+    },
+    "baseline_metrics": {
+      "eval_wall_clock_sec": 1.6908435139921494,
+      "maxcut_value": 483.8489315625
+    },
+    "decision": "PROVISIONAL_KEEP",
+    "tripwires": []
+  },
+  "baseline_search": {
+    "eval_wall_clock_sec": 1.6908435139921494,
+    "maxcut_value": 483.8489315625
+  },
+  "benchmark": "d7",
+  "confirm_verdicts": {
+    "d7_autosota_rlsa_leap": {
+      "cand": 501.3168935416667,
+      "decision": "PROMOTE",
+      "gain": 11.371976874999973,
+      "lcb": 8.946321736111088,
+      "ref": 489.9449166666667,
+      "signflip_method": "exact",
+      "signflip_p": 1.52587890625e-05,
+      "tripwires": []
+    },
+    "d7_comp_spectral_greedy": {
+      "cand": 501.3168935416667,
+      "decision": "PROMOTE",
+      "gain": 6.870905833333325,
+      "lcb": 4.982649722222163,
+      "ref": 494.44598770833335,
+      "signflip_method": "exact",
+      "signflip_p": 1.52587890625e-05,
+      "tripwires": []
+    },
+    "d7_paper_rlsa_langevin": {
+      "cand": 501.3168935416667,
+      "decision": "PROMOTE",
+      "gain": 12.093274166666674,
+      "lcb": 9.513743055555551,
+      "ref": 489.223619375,
+      "signflip_method": "exact",
+      "signflip_p": 1.52587890625e-05,
+      "tripwires": []
+    }
+  },
+  "head_to_head_confirm_vs_w4_champ": {
+    "cowork_cand_id": "d7_v5_r1_opus_bit",
+    "cowork_metric": 501.3168935416667,
+    "decision": "PROMOTE",
+    "lcb_one_sided": 0.3722799999999893,
+    "signed_gain_cowork_over_w4": 0.9944862500000227,
+    "signflip_p": 0.001251220703125,
+    "tripwires": [],
+    "w4_champ_id": "d7_w4_champ_dsb_memetic",
+    "w4_champ_metric": 500.32240729166665
+  },
+  "head_to_head_holdout_vs_w4_champ": {
+    "cowork_cand_id": "d7_v5_r1_opus_bit",
+    "cowork_metric": 500.85764375,
+    "decision": "ROLLBACK",
+    "lcb_one_sided": 0.17040750000001026,
+    "signed_gain_cowork_over_w4": 0.6315927083333577,
+    "signflip_p": 0.0201568603515625,
+    "w4_champ_id": "d7_w4_champ_dsb_memetic",
+    "w4_champ_metric": 500.22605104166666
+  },
+  "holdout_finalized": {
+    "comparisons": {
+      "d7_autosota_rlsa_leap": {
+        "bootstrap_mode": "crossed_seed_cluster",
+        "ci95_high": 13.994607103174644,
+        "ci95_low": 10.77445333333327,
+        "distinct_cluster_deltas": 14,
+        "insufficient_replication": false,
+        "lcb_one_sided": 10.77445333333327,
+        "low_cluster_warning": false,
+        "n_clusters": 16,
+        "n_items": 48,
+        "n_positive_clusters": 16,
+        "n_seeds": 3,
+        "n_strata": 4,
+        "obs_candidate": 500.85764375,
+        "obs_reference": 488.40972833333336,
+        "se": 0.822201891282911,
+        "signed_gain": 12.44791541666666,
+        "signflip_method": "exact",
+        "signflip_p_one_sided": 1.52587890625e-05,
+        "statistic": "mean",
+        "weighting": "equal_stratum"
+      },
+      "d7_comp_spectral_greedy": {
+        "bootstrap_mode": "crossed_seed_cluster",
+        "ci95_high": 8.17871305555559,
+        "ci95_low": 5.026624166666636,
+        "distinct_cluster_deltas": 14,
+        "insufficient_replication": false,
+        "lcb_one_sided": 5.026624166666636,
+        "low_cluster_warning": false,
+        "n_clusters": 16,
+        "n_items": 48,
+        "n_positive_clusters": 16,
+        "n_seeds": 3,
+        "n_strata": 4,
+        "obs_candidate": 500.85764375,
+        "obs_reference": 494.355415625,
+        "se": 0.8126728304208067,
+        "signed_gain": 6.502228125000045,
+        "signflip_method": "exact",
+        "signflip_p_one_sided": 1.52587890625e-05,
+        "statistic": "mean",
+        "weighting": "equal_stratum"
+      },
+      "d7_paper_rlsa_langevin": {
+        "bootstrap_mode": "crossed_seed_cluster",
+        "ci95_high": 14.683503333333363,
+        "ci95_low": 11.96269841269833,
+        "distinct_cluster_deltas": 13,
+        "insufficient_replication": false,
+        "lcb_one_sided": 11.96269841269833,
+        "low_cluster_warning": false,
+        "n_clusters": 16,
+        "n_items": 48,
+        "n_positive_clusters": 16,
+        "n_seeds": 3,
+        "n_strata": 4,
+        "obs_candidate": 500.85764375,
+        "obs_reference": 487.57118645833333,
+        "se": 0.6961946065407757,
+        "signed_gain": 13.286457291666693,
+        "signflip_method": "exact",
+        "signflip_p_one_sided": 1.52587890625e-05,
+        "statistic": "mean",
+        "weighting": "equal_stratum"
+      }
+    },
+    "holdout_guardrails_passed": true,
+    "holdout_seal_sha256": "66a7c64144dcfd2fd0b0c1c78963919d7cec452a6db275f86095779464d63511",
+    "holdout_tripwires": [],
+    "ledger_entry_sha256": "02ea7b62f815b1291279875ad7272ee426ed88d5267808d3073c40115e0d3af5",
+    "seal_file": "/scratch/autosota_governed_v5/seals/HOLDOUT_SEAL_v5_d7.json",
+    "status": "FINALIZED"
+  },
+  "holdout_reserve": {
+    "candidate_artifact_sha256": "1ed9c9322095a215dee115e110339bde7b79f8c661da4141a97be8776baab8df",
+    "candidate_id": "d7_v5_r1_opus_bit",
+    "ledger_head_at_reserve_sha256": "e3703ef5e51a033ebabf8db488193f3c0b8d6264a84fc3748cb0f64ae3e98807",
+    "manifest_root_sha256": "3f414f866e0c0ce38e410934f5f9be8d02b9adb7b5bf6a93ec3b9bb7cafb5772",
+    "required_comparators_verified": [
+      "d7_paper_rlsa_langevin",
+      "d7_autosota_rlsa_leap",
+      "d7_comp_spectral_greedy"
+    ],
+    "reserved_at_utc": "2026-11-18T21:58:30.986395+00:00",
+    "rules_sha256": "cf3830fd8c9b7b508801de2010f760f92422931faf49576f9d3da51787626393",
+    "schema_version": "3.0",
+    "seal_file": "/scratch/autosota_governed_v5/seals/HOLDOUT_SEAL_v5_d7.json",
+    "status": "RESERVED"
+  },
+  "ledger_verification": {
+    "entries": 8,
+    "head_sha256": "02ea7b62f815b1291279875ad7272ee426ed88d5267808d3073c40115e0d3af5",
+    "status": "VERIFIED"
+  },
+  "manifest_root_sha256": "3f414f866e0c0ce38e410934f5f9be8d02b9adb7b5bf6a93ec3b9bb7cafb5772",
+  "round1_leaderboard": {
+    "d7_v5_r1_astra_kl8_tabu": {
+      "decision_vs_running_incumbent": "ROLLBACK",
+      "metrics": {
+        "eval_wall_clock_sec": 0.9858882960106712,
+        "maxcut_value": 496.2263959375
+      },
+      "proposer_agent": "Cowork_GPT_6.2_Astra_Max",
+      "redacted_feedback": {
+        "candidate_id": "d7_v5_r1_astra_kl8_tabu",
+        "comparator_id": "d7_v5_r1_opus_bit",
+        "consecutive_rollbacks": 1,
+        "decision": "ROLLBACK",
+        "decision_stage": "search",
+        "halt_recommended": false,
+        "trial_id": "d7_v5_r1_02_d7_v5_r1_astra_kl8_tabu",
+        "tripwires": []
+      },
+      "tripwires": []
+    },
+    "d7_v5_r1_opus_bit": {
+      "decision_vs_running_incumbent": "PROVISIONAL_KEEP",
+      "metrics": {
+        "eval_wall_clock_sec": 1.435913121997146,
+        "maxcut_value": 497.266410625
+      },
+      "proposer_agent": "Cowork_Opus_5.5_Max",
+      "redacted_feedback": {
+        "candidate_id": "d7_v5_r1_opus_bit",
+        "comparator_id": "d7_paper_rlsa_langevin",
+        "consecutive_rollbacks": 0,
+        "decision": "PROVISIONAL_KEEP",
+        "decision_stage": "search",
+        "halt_recommended": false,
+        "trial_id": "d7_v5_r1_01_d7_v5_r1_opus_bit",
+        "tripwires": []
+      },
+      "tripwires": []
+    }
+  },
+  "round2_leaderboard": {
+    "d7_v5_r2_astra_crossover": {
+      "decision_vs_running_incumbent": "ROLLBACK",
+      "metrics": {
+        "eval_wall_clock_sec": 1.5623609629983548,
+        "maxcut_value": 497.266410625
+      },
+      "proposer_agent": "Cowork_R2_GPT_6.2_Astra_Max",
+      "tripwires": []
+    },
+    "d7_v5_r2_opus_crossover": {
+      "decision_vs_running_incumbent": "ROLLBACK",
+      "metrics": {
+        "eval_wall_clock_sec": 2.8176686570222955,
+        "maxcut_value": 497.266410625
+      },
+      "proposer_agent": "Cowork_R2_Opus_5.5_Max",
+      "tripwires": [
+        "baseline_ratio_too_high:eval_wall_clock_sec_ratio=1.6664>1.6"
+      ]
+    }
+  },
+  "selected_finalist": "d7_v5_r1_opus_bit",
+  "selected_finalist_proposer": "Cowork_Opus_5.5_Max",
+  "w4_headless_champ_search": {
+    "decision_vs_baseline": "PROVISIONAL_KEEP",
+    "metrics": {
+      "eval_wall_clock_sec": 1.0934817599772941,
+      "maxcut_value": 496.447494375
+    },
+    "tripwires": [],
+    "w4_champ_id": "d7_w4_champ_dsb_memetic"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "decision_stage": "search",
+  "direction": "maximize",
+  "hard_floors": {
+    "mean_acc": 0.74
+  },
+  "max_ratio_vs_baseline": {
+    "eval_wall_clock_sec": 2.5
+  },
+  "min_improvement": 0.005,
+  "primary_metric": "worst_group_acc"
+}

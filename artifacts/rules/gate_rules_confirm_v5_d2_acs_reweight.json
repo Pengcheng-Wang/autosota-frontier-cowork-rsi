@@ -1,0 +1,23 @@
+{
+  "alpha_one_sided": 0.025,
+  "decision_stage": "confirm",
+  "direction": "maximize",
+  "hard_floors": {
+    "mean_acc": 0.74
+  },
+  "max_confirm_looks": 2,
+  "max_ratio_vs_baseline": {
+    "eval_wall_clock_sec": 2.5
+  },
+  "min_confirm_clusters": 12,
+  "min_improvement": 0.005,
+  "per_stratum_hard_floors": {
+    "mean_acc": 0.74
+  },
+  "primary_metric": "worst_group_acc",
+  "required_comparators": [
+    "d2_base_erm_mlp",
+    "d2_paper_latent_score_reweight",
+    "d2_comp_group_dro"
+  ]
+}

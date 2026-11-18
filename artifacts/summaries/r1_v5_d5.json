@@ -1,0 +1,79 @@
+{
+  "autosota_audit": {
+    "autosota_id": "d5_autosota_msm_5x_ens",
+    "autosota_metrics": {
+      "edge_auprc": 0.2113810474671792,
+      "edge_auroc": 0.5341786418709495,
+      "eval_wall_clock_sec": 16.11468251585029
+    },
+    "baseline_metrics": {
+      "edge_auprc": 0.19958400683224653,
+      "edge_auroc": 0.5163496759650605,
+      "eval_wall_clock_sec": 5.986636365065351
+    },
+    "decision": "ROLLBACK",
+    "tripwires": [
+      "baseline_ratio_too_high:eval_wall_clock_sec_ratio=2.6918>2.5"
+    ]
+  },
+  "baseline_search": {
+    "edge_auprc": 0.19958400683224653,
+    "edge_auroc": 0.5163496759650605,
+    "eval_wall_clock_sec": 5.986636365065351
+  },
+  "bench_id": "d5",
+  "manifest_root_sha256": "51f39559de84aa4a71fb5a341d3ecf6bd4b16086c92f57ef6b5d2ee66ccd491f",
+  "round1_incumbent_id": "d5_v5_r1_astra_mar_likgain",
+  "round1_leaderboard": {
+    "d5_v5_r1_astra_mar_likgain": {
+      "decision_vs_running_incumbent": "PROVISIONAL_KEEP",
+      "metrics": {
+        "edge_auprc": 0.28848563245897896,
+        "edge_auroc": 0.6243660185967878,
+        "eval_wall_clock_sec": 0.4738677029963583
+      },
+      "proposer_agent": "Cowork_GPT_6.2_Astra_Max",
+      "redacted_feedback": {
+        "candidate_id": "d5_v5_r1_astra_mar_likgain",
+        "comparator_id": "d5_v5_r1_opus_tem_rp",
+        "consecutive_rollbacks": 0,
+        "decision": "PROVISIONAL_KEEP",
+        "decision_stage": "search",
+        "halt_recommended": false,
+        "trial_id": "d5_v5_r1_02_d5_v5_r1_astra_mar_likgain",
+        "tripwires": []
+      },
+      "tripwires": []
+    },
+    "d5_v5_r1_opus_tem_rp": {
+      "decision_vs_running_incumbent": "PROVISIONAL_KEEP",
+      "metrics": {
+        "edge_auprc": 0.2528235230639152,
+        "edge_auroc": 0.6151803324880248,
+        "eval_wall_clock_sec": 2.559801742900163
+      },
+      "proposer_agent": "Cowork_Opus_5.5_Max",
+      "redacted_feedback": {
+        "candidate_id": "d5_v5_r1_opus_tem_rp",
+        "comparator_id": "d5_paper_msm_score_matching",
+        "consecutive_rollbacks": 0,
+        "decision": "PROVISIONAL_KEEP",
+        "decision_stage": "search",
+        "halt_recommended": false,
+        "trial_id": "d5_v5_r1_01_d5_v5_r1_opus_tem_rp",
+        "tripwires": []
+      },
+      "tripwires": []
+    }
+  },
+  "w4_headless_champ_search": {
+    "decision_vs_baseline": "PROVISIONAL_KEEP",
+    "metrics": {
+      "edge_auprc": 0.26822416307508073,
+      "edge_auroc": 0.6236862496477882,
+      "eval_wall_clock_sec": 0.7623282361309975
+    },
+    "tripwires": [],
+    "w4_champ_id": "d5_w4_champ_multi_imp_stab"
+  }
+}

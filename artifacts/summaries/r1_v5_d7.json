@@ -1,0 +1,71 @@
+{
+  "autosota_audit": {
+    "autosota_id": "d7_autosota_rlsa_leap",
+    "autosota_metrics": {
+      "eval_wall_clock_sec": 1.7042129379988182,
+      "maxcut_value": 484.9931140625
+    },
+    "baseline_metrics": {
+      "eval_wall_clock_sec": 1.6908435139921494,
+      "maxcut_value": 483.8489315625
+    },
+    "decision": "PROVISIONAL_KEEP",
+    "tripwires": []
+  },
+  "baseline_search": {
+    "eval_wall_clock_sec": 1.6908435139921494,
+    "maxcut_value": 483.8489315625
+  },
+  "bench_id": "d7",
+  "manifest_root_sha256": "3f414f866e0c0ce38e410934f5f9be8d02b9adb7b5bf6a93ec3b9bb7cafb5772",
+  "round1_incumbent_id": "d7_v5_r1_opus_bit",
+  "round1_leaderboard": {
+    "d7_v5_r1_astra_kl8_tabu": {
+      "decision_vs_running_incumbent": "ROLLBACK",
+      "metrics": {
+        "eval_wall_clock_sec": 0.9858882960106712,
+        "maxcut_value": 496.2263959375
+      },
+      "proposer_agent": "Cowork_GPT_6.2_Astra_Max",
+      "redacted_feedback": {
+        "candidate_id": "d7_v5_r1_astra_kl8_tabu",
+        "comparator_id": "d7_v5_r1_opus_bit",
+        "consecutive_rollbacks": 1,
+        "decision": "ROLLBACK",
+        "decision_stage": "search",
+        "halt_recommended": false,
+        "trial_id": "d7_v5_r1_02_d7_v5_r1_astra_kl8_tabu",
+        "tripwires": []
+      },
+      "tripwires": []
+    },
+    "d7_v5_r1_opus_bit": {
+      "decision_vs_running_incumbent": "PROVISIONAL_KEEP",
+      "metrics": {
+        "eval_wall_clock_sec": 1.435913121997146,
+        "maxcut_value": 497.266410625
+      },
+      "proposer_agent": "Cowork_Opus_5.5_Max",
+      "redacted_feedback": {
+        "candidate_id": "d7_v5_r1_opus_bit",
+        "comparator_id": "d7_paper_rlsa_langevin",
+        "consecutive_rollbacks": 0,
+        "decision": "PROVISIONAL_KEEP",
+        "decision_stage": "search",
+        "halt_recommended": false,
+        "trial_id": "d7_v5_r1_01_d7_v5_r1_opus_bit",
+        "tripwires": []
+      },
+      "tripwires": []
+    }
+  },
+  "w4_headless_champ_search": {
+    "decision_vs_baseline": "PROVISIONAL_KEEP",
+    "metrics": {
+      "eval_wall_clock_sec": 1.0934817599772941,
+      "maxcut_value": 496.447494375
+    },
+    "tripwires": [],
+    "w4_champ_id": "d7_w4_champ_dsb_memetic"
+  }
+}

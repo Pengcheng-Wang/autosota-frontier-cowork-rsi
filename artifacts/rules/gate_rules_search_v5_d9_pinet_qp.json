@@ -1,0 +1,16 @@
+{
+  "aggregation_weighting": "equal_stratum",
+  "decision_stage": "search",
+  "direction": "minimize",
+  "hard_ceilings": {
+    "max_feasibility_err": 0.0001
+  },
+  "max_ratio_vs_baseline": {
+    "eval_wall_clock_sec": 1.25
+  },
+  "min_improvement": 0.0005,
+  "per_stratum_hard_ceilings": {
+    "feasibility_err": 0.0001
+  },
+  "primary_metric": "opt_rmse"
+}

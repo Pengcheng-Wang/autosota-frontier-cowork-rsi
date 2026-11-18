@@ -1,0 +1,60 @@
+{
+  "created_at_utc": "2026-11-18T21:16:19.182743+00:00",
+  "entries": {
+    "immutable_eval/gate_rules_confirm.json": {
+      "exec": false,
+      "sha256": "6af49afff3cd9f213a15fd0721fb5ea8b49ca99737bf825b97178a1eb08dcbf6",
+      "size": 752,
+      "type": "file"
+    },
+    "immutable_eval/gate_rules_search.json": {
+      "exec": false,
+      "sha256": "3f5bc84c2f9a68070d9d137a5247c02fa085d16d2cb32a7765f4215f7842e82c",
+      "size": 409,
+      "type": "file"
+    },
+    "immutable_eval/gt_confirm.json": {
+      "exec": false,
+      "sha256": "4f5f1eb63df860747228e35183c63cac11b2b9f0d12fb54675754337aa27aacb",
+      "size": 4022787,
+      "type": "file"
+    },
+    "immutable_eval/gt_holdout.json": {
+      "exec": false,
+      "sha256": "78017edee86cf3fc4630187e38305e8f5735995521580e98946b123ffb1f6c8c",
+      "size": 4017690,
+      "type": "file"
+    },
+    "immutable_eval/gt_search.json": {
+      "exec": false,
+      "sha256": "46d6a96d9136a87f572b8fdeb38ba02b07ee2104079fb5c51a2db15384c11314",
+      "size": 2680159,
+      "type": "file"
+    },
+    "immutable_eval/ids_confirm.json": {
+      "exec": false,
+      "sha256": "a42c2eed64cdcf9b8a06e95858fe12d5b907d51af4d3ec9d149d8bd290eeb785",
+      "size": 1455,
+      "type": "file"
+    },
+    "immutable_eval/ids_holdout.json": {
+      "exec": false,
+      "sha256": "1039da86878e4a5c6de135642f93c6c2b3bcdf13d4dadfccf9d06bf2c4fb9ff4",
+      "size": 1455,
+      "type": "file"
+    },
+    "immutable_eval/ids_search.json": {
+      "exec": false,
+      "sha256": "1f7ca0a44aa4eeb63fff77f6df3b7768874997f62806bff9839bf4f218d20457",
+      "size": 923,
+      "type": "file"
+    }
+  },
+  "entry_count": 8,
+  "manifest_root_sha256": "f3020cbd8ec81815e873fbec96bad39bd49379f693f8609cc01c61623f5452ae",
+  "protected_roots": [
+    "immutable_eval"
+  ],
+  "root": "/scratch/autosota_governed_v5/tracks/bench_d6_ollalanding",
+  "schema_version": "3.0"
+}
