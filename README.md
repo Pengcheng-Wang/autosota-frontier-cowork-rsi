@@ -1,6 +1,8 @@
 # Governed Frontier-Cowork Recursive Self-Improvement on AutoSOTA (`Wave 5`)
 
-> **Multi-Model Frontier Proposer & Auditor Tournament (`Claude Opus 5.5, Max` + `GPT 6.2 Astra, Max` via M365 Copilot `Cowork`) under Hardened Executable Loop Governance (`governed_loop_guard.py v3.6`) across 9 `AutoSOTA` Benchmarks on `24 × NVIDIA A100-80GB`**
+> **Multi-Model Frontier Proposer & Auditor Tournament (`Claude Opus 5.5, Max` + `GPT 6.2 Astra, Max` via M365 Copilot `Cowork`) under Hardened Executable Loop Governance across 9 `AutoSOTA` Benchmarks on `24 × NVIDIA A100-80GB` — Executed under `v3.6` & Bundled with Upgraded `governed_loop_guard.py v3.7` (`27 / 27` Tests)**
+>
+> *Companion Waves 0–4 + Full 105-Paper Triage Repository:* [`Pengcheng-Wang/autosota-governed-rsi`](https://github.com/Pengcheng-Wang/autosota-governed-rsi)
 
 ---
 
@@ -89,10 +91,14 @@ flowchart TD
 │   ├── milestone1_opus55_max_design_audit.md  # Pre-flight Opus 5.5, Max audit (CONDITIONAL_GO + remedies)
 │   ├── round1_cowork_opus55_and_astra62_proposals.md
 │   ├── round2_cowork_crossover_proposals.md
-│   └── milestone2_dual_frontier_post_holdout_audits.md # Final Opus 5.5, Max + GPT 6.2 Astra, Max audits
+│   ├── milestone2_dual_frontier_post_holdout_audits.md # Final Opus 5.5, Max + GPT 6.2 Astra, Max audits
+│   └── milestone3_v37_coding_and_ml_alignment_audit.md # Dual Cowork coding/ML alignment audit & v3.7 upgrade
 ├── guard/
-│   ├── scripts/governed_loop_guard.py         # v3.6 zero-dependency executable governance CLI
-│   └── tests/test_governed_loop_guard.py      # 19-test adversarial & statistical regression suite
+│   ├── SKILL.md                               # Full governed-loop-optimization v3.7 skill specification
+│   ├── scripts/governed_loop_guard.py         # v3.7 zero-dependency executable governance CLI (10 subcommands)
+│   ├── tests/test_governed_loop_guard.py      # 27-test adversarial, statistical & isolation regression suite
+│   ├── references/domain-playbooks.md         # Domain playbooks (A–F) & Wave 1–5 post-mortems
+│   └── assets/program_template.md             # Canonical program.md template (v3.7)
 ├── harness/                                   # Wave-5 split builders, isolated tournament orchestrator & R1/R2 generators
 ├── candidates/                                # All 78 standalone `python -I -B` solver scripts (D1–D9)
 └── artifacts/
